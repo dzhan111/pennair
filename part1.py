@@ -7,7 +7,7 @@ image = cv2.imread('PennAir 2024 App Static.png')
 
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
-
+#color ranges, cuz gauss doesnt work
 lower_red = np.array([0, 100, 100])
 upper_red = np.array([10, 255, 255])
 
@@ -17,7 +17,7 @@ upper_yellow = np.array([35, 255, 255])
 lower_blue = np.array([110, 100, 100])
 upper_blue = np.array([130, 255, 255])
 
-lower_green = np.array([45, 254, 250])  
+lower_green = np.array([45, 254, 250])
 upper_green = np.array([60, 255, 255]) 
 
 lower_pink = np.array([140, 100, 100])
